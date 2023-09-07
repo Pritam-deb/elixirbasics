@@ -15,4 +15,7 @@ defmodule Elixirbasics do
   def hello do
     :world
   end
+  def privatefunc do
+    :private_hello
+  end
 end
