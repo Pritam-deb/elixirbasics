@@ -1,18 +1,13 @@
 defmodule Elixirbasics do
-
-  def add(num1,num2) do
-    num1 + num2
+  def first_letter(value) do
+    String.trim(value) |> String.first()
   end
-  def subtract(num1,num2) do
-    num1 - num2
+  def initial(value) do
+    "#{first_letter(value) |> String.capitalize()}. "
   end
-  def multiply(num1,num2) do
-    num1 * num2
-  end
-  def divide(num1,num2) do
-    num1 / num2
-  end
-  def round_up(value) do
-    Float.ceil(value,2)
+  def initials(fullname) do
+    list = String.split(fullname)
+    Enum.map(list, fn name -> initial(name) end)
+    |> List.to_string() |> String.trim()
   end
 end
