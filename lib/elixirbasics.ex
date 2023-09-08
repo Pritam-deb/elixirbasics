@@ -1,21 +1,18 @@
 defmodule Elixirbasics do
-  @moduledoc """
-  Documentation for `Elixirbasics`.
-  """
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Elixirbasics.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  def add(num1,num2) do
+    num1 + num2
   end
-  def privatefunc do
-    :private_hello
+  def subtract(num1,num2) do
+    num1 - num2
+  end
+  def multiply(num1,num2) do
+    num1 * num2
+  end
+  def divide(num1,num2) do
+    num1 / num2
+  end
+  def round_up(value) do
+    Float.ceil(value,2)
   end
 end

@@ -2,7 +2,7 @@ defmodule ElixirbasicsTest do
   use ExUnit.Case
   doctest Elixirbasics
 
-  test "greets the world" do
-    assert Elixirbasics.hello() == :world
+  test "multiply 3 * 4 = 12" do
+    assert Elixirbasics.multiply(3,4) == 12
   end
 end
